@@ -8,9 +8,15 @@
 @import "../scss/variables.scss";
 @import "../scss/mixins.scss";
 @import "../scss/cdn.scss";
+@import "../scss/header.scss";
+@import "../scss/features.scss";
+@import "../scss/works.scss";
+@import "../scss/our-team.scss";
+@import "../scss/testimonials.scss";
+@import "../scss/footer.scss";
 
 html {
-  font-family: "Open Sans", "Raleway", sans-serif;
+  font-family: "Raleway", "Cardo", sans-serif;
 }
 .container {
   max-width: 1170px;
@@ -18,4 +24,54 @@ html {
   padding: 0 15px;
   z-index: 5;
   position: relative;
+}
+.header {
+  padding: 38px 0 120px 0;
+}
+.testimonials {
+  padding: 0 0 114px 0;
+}
+.features {
+  padding: 166px 0 116px 0;
+}
+.our-team {
+  padding: 114px 0;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    width: 100%;
+  }
+  .features {
+    padding: 78px 0 80px 0;
+  }
+  .our-team {
+    padding: 78px 0;
+  }
+  .testimonials {
+    padding: 0 0 78px 0;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 9px;
+  }
+  .container {
+    width: 100%;
+  }
+  .header {
+    padding: 21px 0 52px 0;
+  }
+  .features {
+    padding: 40px 0 35px 0;
+  }
+  .testimonials {
+    padding: 0 0 35px 0;
+  }
+  .our-team {
+    padding: 35px 0 41px 0;
+  }
 }

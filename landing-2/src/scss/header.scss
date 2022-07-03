@@ -1,0 +1,193 @@
+.header {
+  background-image: url(../img/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 320px) {
+    background-position: top;
+  }
+}
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(186, 187, 197, 1);
+  margin: 0 0 130px 0;
+  @media (max-width: 320px) {
+    border: none;
+    margin-bottom: 50px;
+  }
+
+  .burger {
+    display: none;
+
+    @media (max-width: 320px) {
+      display: block;
+      width: 24px;
+      height: 18px;
+      position: relative;
+      margin: 0 15px;
+
+      &::after {
+        content: "";
+        background-color: $_wite;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+      }
+      &::before {
+        content: "";
+        background-color: $_wite;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        top: 0;
+      }
+      span {
+        position: absolute;
+        background-color: $_wite;
+        width: 100%;
+        height: 3px;
+        top: 7px;
+      }
+    }
+  }
+  .logo {
+    margin: 0 15px 36px 0;
+    color: rgba(255, 255, 255, 30%);
+    display: flex;
+    font-size: $_36px;
+    font-weight: $_700;
+    &::after {
+      content: "BOX";
+      color: $_wite;
+      font-weight: $_400;
+      display: inline;
+    }
+    @media (max-width: 320px) {
+      margin-bottom: 0;
+    }
+  }
+  .navigation {
+    width: 670px;
+    line-height: 15.26px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 15px;
+
+    @media (max-width: 320px) {
+      display: none;
+    }
+    .navigation-item {
+      text-align: center;
+      padding: 15px 15px 45px 15px;
+      transition: 0.2s;
+
+      a {
+        color: $_wite;
+        font-size: $_13px;
+        font-weight: $_700;
+        text-transform: uppercase;
+        &:active {
+          color: $_dark-red;
+        }
+      }
+      &:hover {
+        width: 8.375em;
+        border-bottom: 3px solid $_light-gray;
+        color: $_dark-red;
+        cursor: pointer;
+      }
+      &:active {
+        border-color: $_dark-red;
+      }
+      @media (max-width: 1024px) {
+        // margin: 0 15px 32px 15px;
+      }
+    }
+  }
+}
+.banner {
+  text-align: center;
+  .main-title {
+    font-size: $_64px;
+    font-weight: $_900;
+    color: $_wite;
+    text-transform: uppercase;
+    line-height: 75.14px;
+    margin-bottom: 31px;
+
+    @media (max-width: 1024px) {
+      line-height: 56.35px;
+      margin-bottom: 62px;
+    }
+    @media (max-width: 320px) {
+      margin-top: 80px;
+      margin-bottom: 33px;
+      width: 100%;
+      line-height: 42.26px;
+    }
+
+    // &::before {
+    //   content: "";
+    //   border-top: 1px solid rgba(186, 187, 197, 1);
+    //   margin-bottom: 130px;
+    //   display: block;
+    //   @media (max-width: 1024px) {
+    //     margin-bottom: 157px;
+    //   }
+    //   @media (max-width: 320px) {
+    //     display: none;
+    //   }
+    // }
+  }
+  .title-description {
+    width: 100%;
+    font-size: $_24px;
+    font-weight: $_400;
+    color: $_wite;
+    line-height: 28.18px;
+    text-align: center;
+    margin: auto auto 31px auto;
+
+    @media (max-width: 1024px) {
+      margin-bottom: auto;
+      text-align: center;
+      width: 90%;
+    }
+    @media (max-width: 320px) {
+      margin-bottom: 49px;
+      width: auto;
+      line-height: 16.44px;
+    }
+  }
+  .find-more-button {
+    @include button-more;
+    margin-top: 82px;
+    transition: 0.2s;
+    &:hover {
+      background-color: $_dark-red;
+      cursor: pointer;
+    }
+    &:active {
+      background-color: $_red;
+      box-shadow: 4px 4px 30px 0 $_red;
+      cursor: pointer;
+    }
+    @media (max-width: 320px) {
+      margin-top: 0;
+      font-size: 24px;
+      padding: 15px 20px;
+    }
+  }
+  .find-more-button a {
+    color: $_wite;
+    text-transform: uppercase;
+  }
+}

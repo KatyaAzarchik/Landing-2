@@ -1,0 +1,105 @@
+.personal-cards-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+
+  @media (max-width: 320px) {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+.personal-card {
+  width: 260px;
+  margin: 0 15px;
+  @media (max-width: 1024px) {
+    width: 210px;
+    object-fit: contain;
+  }
+  @media (max-width: 320px) {
+    width: auto;
+    margin-bottom: 49px;
+    &:last-child {
+      margin-bottom: 41px;
+    }
+  }
+}
+.card-photo {
+  min-width: 260px;
+  max-height: 260px;
+  overflow: hidden;
+  position: relative;
+  @media (max-width: 1024px) {
+    min-width: 210px;
+    height: 210px;
+    object-fit: contain;
+  }
+  @media (max-width: 320px) {
+    width: 100%;
+  }
+  img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    @media (max-width: 320px) {
+      width: 100%;
+      object-fit: none;
+    }
+  }
+}
+.cad-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .member-name {
+    margin-bottom: 5px;
+    margin-top: 30px;
+    font-size: $_24px;
+    font-weight: $_700;
+    color: $_lite-black;
+    @media (max-width: 1024px) {
+      margin-top: 25px;
+    }
+  }
+  .member-position {
+    text-transform: uppercase;
+    color: $_red;
+    font-size: $_18px;
+    font-weight: $_400;
+    margin-bottom: 18px;
+    @media (max-width: 1024px) {
+      margin-bottom: 22px;
+    }
+  }
+  .card-description {
+    color: $_gray;
+    margin-bottom: 38px;
+    font-size: $_18px;
+    font-weight: $_400;
+  }
+}
+
+.our-team-social a {
+  img {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  margin-left: 5px;
+  &:first-child {
+    margin-left: 0;
+  }
+  @media (max-width: 1024px) {
+    width: 33px;
+    height: 33px;
+  }
+  @media (max-width: 320px) {
+    width: 39px;
+    height: 39px;
+  }
+}
