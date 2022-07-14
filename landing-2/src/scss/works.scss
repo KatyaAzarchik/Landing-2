@@ -8,7 +8,9 @@
   max-height: 340px;
   overflow: hidden;
   position: relative;
-
+  @media (max-width: 750px) {
+    width: 50%;
+  }
   @media (max-width: 320px) {
     justify-content: space-between;
     width: 50%;

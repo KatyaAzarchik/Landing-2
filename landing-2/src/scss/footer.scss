@@ -1,73 +1,21 @@
-.footer-main {
-  padding: 0 0 78px 0;
-  @media (max-width: 1024px) {
-    padding: 0 0 78px;
-  }
-  @media (max-width: 320px) {
-    padding: 34px 0 45px;
-  }
-}
-.footer-title {
-  text-align: center;
-  font-size: $_30px;
-  font-weight: $_500;
-  line-height: 35.22px;
-  margin-bottom: 20px;
-}
-.footer-title-description {
-  text-align: center;
-  font-size: $_18px;
-  font-weight: $_700;
-  line-height: 21.13px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-.footer-dowload {
-  display: block;
-  margin: 48px auto 0;
-  &:hover {
-    background-color: $_dark-red;
-    cursor: pointer;
-  }
-  &:active {
-    background-color: $_red;
-    box-shadow: 4px 4px 30px 0 $_red;
-    cursor: pointer;
-  }
-  a {
-    color: $_wite;
-    text-transform: uppercase;
-    text-align: center;
-    margin: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @include button-more;
-
-  @media (max-width: 320px) {
-    height: 80px;
-    width: 100%;
-    margin-top: 11px;
-  }
-}
-
-.footer-dowload.a {
-  color: $_wite;
+.footer {
+  position: relative;
+  z-index: 3;
 }
 .footer-info {
-  padding: 70px 170px;
-  background-color: rgba(53, 60, 101, 1);
+  padding: 70px 15px;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  background-color: rgba(53, 60, 101, 1);
   flex-wrap: nowrap;
   @media (max-width: 1024px) {
     justify-content: space-between;
     padding: 34px 0px 38px;
   }
   @media (max-width: 620px) {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
   @media (max-width: 320px) {
     flex-direction: column;
@@ -82,10 +30,19 @@
   @media (max-width: 1024px) {
     width: 314px;
   }
+  @media (max-width: 620px) {
+    margin-bottom: 60px;
+    margin-left: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   @media (max-width: 320px) {
     width: 100%;
     margin-bottom: 60px;
     margin-left: 0;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -101,6 +58,10 @@
     font-size: $_18px;
     font-weight: $_400;
     margin: 29px 0 0;
+    @media (max-width: 620px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
     @media (max-width: 320px) {
       margin-top: 34px;
     }
@@ -111,8 +72,17 @@
     font-weight: $_700;
     text-transform: uppercase;
   }
+
   .social {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
     margin: 49px 0 0;
+    @media (max-width: 620px) {
+      margin-top: 20px;
+    }
     a {
       margin-left: 26px;
       &:first-child {
@@ -125,6 +95,7 @@
           margin-left: 0;
         }
       }
+
       @media (max-width: 320px) {
         margin-left: 16px;
         margin-top: 36px;
@@ -148,17 +119,26 @@
       }
     }
   }
+  .social-footer {
+    margin-right: 10px;
+  }
   .about-activebox {
     color: $_wite;
     font-size: $_18px;
     font-weight: $_700;
     text-transform: uppercase;
+    @media (max-width: 620px) {
+      margin-top: 20px;
+    }
   }
   .about-activebox-text {
     color: $_wite;
     font-size: $_18px;
     font-weight: $_400;
     margin: 29px 0 0;
+    @media (max-width: 620px) {
+      margin-top: 20px;
+    }
     @media (max-width: 320px) {
       margin-top: 38px;
     }
@@ -171,6 +151,7 @@
   color: rgba(128, 128, 128, 1);
   font-size: $_18px;
   font-weight: $_400;
+
   @media (max-width: 1024px) {
     padding: 28px 20px;
   }
@@ -179,6 +160,10 @@
     margin: auto;
     @media (max-width: 1024px) {
       width: 314px;
+    }
+    @media (max-width: 560px) {
+      text-align: center;
+      width: 100%;
     }
     @media (max-width: 320px) {
       text-align: center;
