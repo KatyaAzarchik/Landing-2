@@ -1,0 +1,176 @@
+.footer {
+  position: relative;
+  z-index: 3;
+}
+.footer-info {
+  padding: 70px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: rgba(53, 60, 101, 1);
+  flex-wrap: nowrap;
+  @media (max-width: 1024px) {
+    justify-content: space-between;
+    padding: 34px 0px 38px;
+  }
+  @media (max-width: 620px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 320px) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 34px 20px;
+  }
+}
+.footer-item {
+  text-align: center;
+  width: 370px;
+  margin: 0 15px;
+  @media (max-width: 1024px) {
+    width: 314px;
+  }
+  @media (max-width: 620px) {
+    margin-bottom: 60px;
+    margin-left: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 320px) {
+    width: 100%;
+    margin-bottom: 60px;
+    margin-left: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .location {
+    color: $_wite;
+    font-size: $_18px;
+    font-weight: $_700;
+    text-transform: uppercase;
+  }
+  .location-adress {
+    color: $_wite;
+    font-size: $_18px;
+    font-weight: $_400;
+    margin: 29px 0 0;
+    @media (max-width: 620px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 320px) {
+      margin-top: 34px;
+    }
+  }
+  .share {
+    color: $_wite;
+    font-size: $_18px;
+    font-weight: $_700;
+    text-transform: uppercase;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+    margin: 49px 0 0;
+    @media (max-width: 620px) {
+      margin-top: 20px;
+    }
+    a {
+      margin-left: 26px;
+      &:first-child {
+        margin-left: 0;
+      }
+
+      @media (max-width: 1024px) {
+        margin-left: 22px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+      @media (max-width: 320px) {
+        margin-left: 16px;
+        margin-top: 36px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    img {
+      &:hover {
+        transform: scale(1.1);
+      }
+      @media (max-width: 1024px) {
+        width: 33px;
+        height: 33px;
+        overflow: hidden;
+        margin-left: 22px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .social-footer {
+    margin-right: 10px;
+  }
+  .about-activebox {
+    color: $_wite;
+    font-size: $_18px;
+    font-weight: $_700;
+    text-transform: uppercase;
+    @media (max-width: 620px) {
+      margin-top: 20px;
+    }
+  }
+  .about-activebox-text {
+    color: $_wite;
+    font-size: $_18px;
+    font-weight: $_400;
+    margin: 29px 0 0;
+    @media (max-width: 620px) {
+      margin-top: 20px;
+    }
+    @media (max-width: 320px) {
+      margin-top: 38px;
+    }
+  }
+}
+
+.copyright {
+  background-color: rgba(44, 49, 84, 1);
+  padding: 25px 0;
+  color: rgba(128, 128, 128, 1);
+  font-size: $_18px;
+  font-weight: $_400;
+
+  @media (max-width: 1024px) {
+    padding: 28px 20px;
+  }
+  .copyright-info {
+    width: 370px;
+    margin: auto;
+    @media (max-width: 1024px) {
+      width: 314px;
+    }
+    @media (max-width: 560px) {
+      text-align: center;
+      width: 100%;
+    }
+    @media (max-width: 320px) {
+      text-align: center;
+      width: 100%;
+    }
+    .autor {
+      color: $_wite;
+    }
+  }
+}

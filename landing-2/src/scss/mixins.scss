@@ -1,10 +1,9 @@
 @mixin button-more {
-  width: 370px;
   background-color: $_red;
   font-size: $_24px;
   font-weight: $_900;
   border: none;
-  margin: auto;
+  padding: 1.5625rem 3.75rem;
   text-align: center;
   color: $_wite;
 }

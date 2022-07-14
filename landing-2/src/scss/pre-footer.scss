@@ -1,0 +1,56 @@
+.pre-footer-main {
+  padding: 0 0 78px 0;
+  @media (max-width: 1024px) {
+    padding: 0 0 78px;
+  }
+  @media (max-width: 320px) {
+    padding: 34px 0 45px;
+  }
+}
+.footer-title {
+  text-align: center;
+  font-size: $_30px;
+  font-weight: $_500;
+  line-height: 35.22px;
+  margin-bottom: 20px;
+}
+.footer-title-description {
+  text-align: center;
+  font-size: $_18px;
+  font-weight: $_700;
+  line-height: 21.13px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.pre-footer-dowload {
+  display: block;
+  margin: 48px auto 0;
+  &:hover {
+    background-color: $_dark-red;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: $_red;
+    box-shadow: 4px 4px 30px 0 $_red;
+    cursor: pointer;
+  }
+  a {
+    color: $_wite;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include button-more;
+
+  @media (max-width: 320px) {
+    height: 80px;
+    width: 100%;
+    margin-top: 11px;
+  }
+}
+.footer-dowload.a {
+  color: $_wite;
+}

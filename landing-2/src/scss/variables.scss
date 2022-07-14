@@ -3,11 +3,13 @@ $_red: rgba(255, 67, 67, 1);
 $_lite-black: rgba(45, 48, 51, 1);
 $_black: rgba(0, 0, 0, 1);
 $_gray: rgba(108, 114, 121, 1);
+$_light-gray: rgba(186, 187, 197, 1);
 $_wite: rgba(255, 255, 255, 1);
 $_dark-red: rgba(231, 20, 20, 1);
 $_violet: rgba(37, 43, 73, 1);
 
 // font-size
+$_80px: 5rem;
 $_64px: 4rem;
 $_36px: 2.25rem;
 $_30px: 1.875rem;
@@ -19,6 +21,7 @@ $_13px: 0.8125rem;
 $_900: 900;
 $_700: 700;
 $_400: 400;
+$_500: 500;
 
 // line
 $_line-gray: 134px 3px rgba(186, 187, 197, 1);
